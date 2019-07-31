@@ -361,7 +361,8 @@ color: white;
 /* START CSS CEO-GALAXY*/
 .ceo-galaxy .col-12 .content-text p{
 text-align: justify;
-font-size: 14px;
+font-size: 16px;
+line-height: 1.5rem;
 font-family: Font-Roboto-Thin;
 }
 .ceo-galaxy .col-12 .content-text p a{
@@ -418,5 +419,6 @@ text-decoration: none;
     color: #f26b38;
     cursor: pointer;
 }
+
 /* END CSS FOOTER*/
 /* END  CSS MAIN */ 
