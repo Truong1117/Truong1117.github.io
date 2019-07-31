@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>previews/creative</title>
+                <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css" >
+            <script src="https://use.fontawesome.com/96ce7563af.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="../css/style.css">
+            <style>
+            /* CSS Header*/
+           </style>
+        </head>
+        <body>
+            <!--START Sign IN PAGE-->
+                        <!-- START Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 id="exampleModalLongTitle">Sign Up</h4>
+                        <p>Please fill in this form to create an account.</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <form method="Get">
+                            <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <section>
+                                                <h4>Email</h4>
+                                                <input type="text" name="email" placeholder="Enter email" required>
+                                            </section>
+                                            <section>
+                                                <h4>Password</h4>
+                                                <input type="password" placeholder="Enter password" required>
+                                            </section>
+                                            <section>
+                                                <h4>Repeat Password</h4>
+                                                <input type="password" name="repeat-password" placeholder="Repeat Password" required>
+                                            </section>
+                                            <div class="py-2">
+                                                <input type="checkbox" checked="checked"> <span style="padding-left:10px">Remember Me</span>
+                                            </div>
+                                            <div class="py-2">
+                                                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button data-dismiss="modal">
+                                    Cancel
+                                </button>
+                                <button type="submit" class="signupbtn">
+                                    Sign Up
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+                    <!-- END Modal -->
+            <!--END Sign IN PAGE-->
+            <!--START HEADER-->
+            <header>
+                <div class="container-fluid bg-light">
+                    <!-- ROW-1 -->
+                    <div class="row py-4">
+                        <!-- LOGO-->
+                        <div class="col-md-4 ">
+                            <div class="lolgo">
+                                <a href="index.html">
+                                    <img src="../img/galaxy-logo.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <!--SEARCH FORM-->
+                        <div class="col-md-8 pl-5 d-flex justify-content-between ">
+                            <form id="search-form d-flex" class="border rounded py-2 bg-white px-3" >
+                                <input placeholder="Tìm tên phim, diễn viên..." class="border-0">
+                                <button type="submit" class="bg-transparent border-0">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                            <nav class="nav">
+                                <a class="nav-link active text-secondary" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <i class="fa fa-user" aria-hidden="true"></i>   
+                                    Đăng nhập
+                                </a>
+                                <a class="nav-link text-danger" href="#">VN</a>
+                                <a class="nav-link text-secondary" href="#">EN</a>
+                            </nav>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Nav header-->
+                <div class="container-fluid bg-dark">
+                    <nav>
+                        <ul class="d-flex nav justify-content-between px-5 py-1">
+                            <li><a class="nav-link active" href="muave.html">MUA VÉ</a></li>
+                            <!-- LIST MOVIE-->
+                            <li class="sub-movie">
+                                <a class="nav-link botarrow" href="#">PHIM</a>
+                                <!--START SUB_LIST MOVIE HOVER-->
+                                <div class="sub-menu-movie bg-dark py-4 px-3">
+                                    <div class="visible-lg-block">
+                                        <!-- START ROW 1-->
+                                        <div class="row mx-0 submenu-title">
+                                            <div class="col-12">
+                                                <h3>
+                                                    <a href="#">Phim đang chiếu</a>
+                                                </h3>
+                                                <div class="divider">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END ROW 1-->
+                                        <!-- START ROW 2-->
+                                        <div class="row mx-0 movies-group-header">
+                                            <div class="col-3">
+                                                <div class="card bg-transparent border-0">
+                                                    <img src="../img/lion-king.jpg" class="card-img-top " alt="...">
+                                                    <div class="card-body text-uppercase p-0 pt-2">
+                                                        <p class="text-white">Lion King</p>                                                     
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="card bg-transparent border-0" >
+                                                    <img src="../img/spider-man.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body text-uppercase p-0 pt-2">
+                                                        <p class=" text-white mb-0" >Spider man</p>
+                                                        <p class="text-secondary">Người nhện xa nhà</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="card bg-transparent border-0" >
+                                                    <img src="../img/sadako.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body text-uppercase p-0 pt-2">
+                                                        <p class="text-white mb-0">Sadako</p>
+                                                        <p class="text-secondary">vòng luân hồi: Sadako</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="card bg-transparent border-0" >
+                                                    <img src="../img/step-up-6.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body text-uppercase p-0 pt-2">
+                                                        <p class="text-white mb-0 ">Step up china</p>
+                                                        <p class="text-secondary">step up 6: Vũ điệu đường phố</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END ROW 2-->
+                                        <!-- START ROW 3-->
+                                        <div class="row mx-0 submenu-title">
+                                            <div class="col-12">
+                                                <h3>
+                                                    <a href="#">Phim sắp chiếu</a>
+                                                    <div class="divider"></div>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <!-- END ROW 3-->
+                                        <!-- START ROW 4 ITEM MOVIE COMING SOON-->
+                                        <div class="row mx-0 movies-group-header">
+                                            <div class="col-3">
+                                                <div class="card bg-transparent border-0 " >
+                                                    <img src="../img/Fast&Furious.jpg" class="card-img-top" alt="...">
+                                                
+                                                </div>
+                                                   
+                                                    <div class="card-body text-uppercase p-0 pt-2">
+                                                        <p class="text-white">Fast&Furious</p>         
+                                                    </div>
+                                            </div>
+                                           
+                                            <div class="col-3">
+                                                <div class="card bg-transparent border-0" >
+                                                    <img src="../img/tranchienanhsang.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body text-uppercase p-0 pt-2">
+                                                        <p class=" text-white mb-0" >The current war</p>
+                                                        <p class="text-secondary">Trận chiến ánh sáng</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="card bg-transparent border-0">
+                                                    <img src="../img/timchongchome.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body text-uppercase p-0 pt-2">
+                                                        <p class="text-white">Tìm chồng cho mẹ</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="card bg-transparent border-0">
+                                                    <img src="../img/dieubamekhongke.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body text-uppercase p-0 pt-2">
+                                                        <p class="text-white mb-0">Romang</p>
+                                                        <p class="text-secondary">Điều ba mẹ không kể</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END ROW 4-->
+                                    </div>
+                                </div>
+                                    <!--END SUB_LIST MOVIE HOVER-->                          
+                            </li>
+                            <!-- END LIST MOVIE-->
+                            
+                            <!--START LIST GÓC ĐIỆN ẢNH-->
+                            <li class="sub-film">
+                                <a class="nav-link botarrow" href="#">GÓC ĐIỆN ẢNH</a>
+                                <ul class="sub-menu-film">
+                                    <li><a href="gocdienanh(theloaiphim).html">thể loại phim</a></li>
+                                    <li><a>diễn viên</a></li>
+                                    <li><a>đạo diễn</a></li>
+                                    <li><a>bình luận phim</a></li>
+                                    <li><a>blog điện ảnh</a></li>
+                                </ul>
+                            </li>
+                            <!--END LIST GÓC ĐIỆN ẢNH-->
+                            <!--START LIST SỰ KIỆN-->
+                            <li class="sub-film">
+                                <a class="nav-link botarrow active" href="#">SỰ KIỆN</a>
+                                <ul class="sub-menu-even">
+                                    <li><a href="sukien(uudai).html">ưu đãi</a></li>
+                                    <li><a>phim hay tháng</a></li>
+                                </ul>
+                            </li>
+                            <!--END LIST SỰ KIỆN-->
+                            <li><a class="nav-link" href="rap-giave.html">RẠP/GIÁ VÉ</a></li>
+                            <li><a class="nav-link" href="#">HỖ TRỢ</a></li>
+                            <li><a class="nav-link" href="#">THÀNH VIÊN</a></li> 
+                        </ul>  
+                    </nav>
+                </div>
+            </header>
+            <!--END HEADER-->
+            <!--START SLIDE SHOW-->
+            <div class="container-fluid p-0 carousel-inner">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="../img/carousel/lion-king.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../img/carousel/discount.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../img/carousel/banner.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/carousel/banner2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            <!-- START BOX - BUY TICKET-->
+                <div class="box-buy-ticket">
+                    <section class="pl-3 pt-3">
+                        <div class="box-header">
+                            <p>Mua vé nhanh</p>
+                        </div>
+                    </section>
+                    <section>
+                        <nav>
+                            <ul class="nav p-3 nav-justified nav-pills">
+                                <li class="nav-item ">
+                                    <a class="nav-link active bg-transparent text-white" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                                        Theo phim
+                                    </a>
+                                    <div class="divider-nav p-0"></div>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class=" nav-link bg-transparent text-white" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                        Theo ngày
+                                    </a>
+                                    <div class="divider-nav row"></div>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link bg-transparent text-white" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                        Theo rạp
+                                    </a>
+                                    <div class="divider-nav row"></div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="tab-content px-3" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <div class="form-group">
+                                        <select class="form-control border-0 text-success font-weight-bold" style="background:  rgba(255, 255, 255, 0.3);" id="exampleFormControlSelect1">
+                                            <option>Chọn phim</option>
+                                            <option>Fast & Furious: Hobbs & Shaw</option>
+                                            <option>The Lion King</option>
+                                            <option>Spider-Man: Far From Home</option>
+                                            <option>Sadako</option>
+                                            <option>Step Up China</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control text-success font-weight-bold border-0" style="background:  rgba(255, 255, 255, 0.3);" id="exampleFormControlSelect1">
+                                            <option>Chọn rạp</option>
+                                            <option>Galaxy - Hội An</option>
+                                            <option>Galaxy - Đà Nẵng</option>
+                                            <option>Galaxy - Hồ Chí Minh</option>
+                                            <option>Galaxy - Hà Nội</option>
+                                            <option>Galaxy - Đà Lạt</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control text-success font-weight-bold border-0" style="background:  rgba(255, 255, 255, 0.3);" id="exampleFormControlSelect1">
+                                            <option>Chọn ngày</option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control text-success font-weight-bold border-0" style="background:  rgba(255, 255, 255, 0.3);" id="exampleFormControlSelect1">
+                                            <option>Chọn suất</option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                        </div>
+                    </section>
+                    <section class="pr-3">
+                        <div class="box-header" style="float: right">
+                            <p>Mua vé</p>
+                        </div>
+                    </section>
+                </div>
+            <!-- END BOX - BUY TICKET-->
+            </div>
+            <!--END SLIDE SHOW-->
+
+                                        <!--START MAIN-->
+
+            <!--START DEMO FILM -->
+            <div class="container-fluid px-5 pt-3">
+                <ul class="nav nav-pills mb-3 border-bottom w-50" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                           <h5 class="text-secondary">PHIM ĐANG CHIẾU</h5> 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                            <h5 class="text-secondary">PHIM SẮP CHIẾU</h5>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="card bg-transparent border-0">
+                                        <img src="../img/lion-king.jpg" class="card-img-top " alt="...">
+                                        <div class="card-body text-uppercase p-0 pt-2">
+                                            <p class="">Lion King</p>                                                     
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card bg-transparent border-0">
+                                        <img src="../img/thattuyetvoikhibenem.jpg" class="card-img-top " alt="...">
+                                        <div class="card-body text-uppercase p-0 pt-2">
+                                            <p class="">thật tuyệt vời khi bên em</p>                                                     
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card bg-transparent border-0">
+                                        <img src="../img/spider-man.jpg" class="card-img-top " alt="...">
+                                        <div class="card-body text-uppercase p-0 pt-2">
+                                            <p class="m-0">spider-man: far from home</p>
+                                            <p class="text-secondary">người nhện xa nhà</p>                                                     
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card bg-transparent border-0">
+                                        <img src="../img/sadako.jpg" class="card-img-top " alt="...">
+                                        <div class="card-body text-uppercase p-0 pt-2">
+                                            <p class="m-0">sadako</p>  
+                                            <p class="text-secondary">vòng luân hồi: sadako</p>                                                   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card bg-transparent border-0">
+                                        <img src="../img/step-up-6.jpg" class="card-img-top " alt="...">
+                                        <div class="card-body text-uppercase p-0 pt-2">
+                                            <p class="m-0">step up china</p>
+                                            <p class="text-secondary">step up 6: vũ điệu đường phố</p>                                                     
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card bg-transparent border-0">
+                                        <img src="../img/doichongthamnhung.jpg" class="card-img-top " alt="...">
+                                        <div class="card-body text-uppercase p-0 pt-2">
+                                            <p class="m-0">p storm</p>
+                                            <p class="text-secondary">đội chống tham nhũng</p>                                                     
+                                        </div>
+                                    </div>
+                                </div>                             
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button>Xem thêm  <i class="fa fa-long-arrow-right pl-2 py-2" aria-hidden="true"></i></button>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="tab-panea fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                </div>
+            </div>
+            <!--END DEMO FILM -->
+
+            <!--START COMMENT FILM-->
+            <div class="container-fluid px-5 pt-3">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="cm-film-title text-uppercase">
+                            <h5>bình luận phim</h5>
+                            <div class="divider"></div>
+                        </div>
+                                        <!-- START CM-FILM-CONTENT -->
+                        <div class="cm-film-content">
+                            <section class="cm-section">
+                                <div class="movie-thumb">
+                                    <img src="../img/img-cm-blog/cm-lionking.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            [Review] Vua Sư Tử: Kịch Bản Kinh Điển Kết Hợp CGI Đỉnh Cao
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Tại sao Disney lại muốn remake những tác phẩm hoạt hình đã đi vào kinh điển. 
+                                            Chắc chắn không nằm ngoài việc mỗi tác phẩm đều mang lại cho nhà Chuột hàng núi tiền.         
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cm-section">
+                                <div class="movie-thumb">
+                                    <img src="../img/img-cm-blog/cm-spiderman.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            [Review] Người Nhện: Marvel Học Tập Hướng Đen Tối Của DC? 
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Nếu cho rằng Avengers: 
+                                            Endgame là đỉnh cao những cú troll của Marvel thì trò lừa từ đầu đến cuối Spider-Man: 
+                                            Far From Home sẽ hoàn toàn làm bạn “đứng hình”.  
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cm-section">
+                                <div class="movie-thumb">
+                                    <img src="../img/img-cm-blog/cm-toystory6.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            [Review] Toy Story 4: Phim Hoạt Hình Thôi Mà, Có Cần Phải Hay Vậy Không!
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Xem phim hoạt hình thì chỉ cần vui là được! Cũng đúng, nhỉ? Nhưng, không chỉ mỗi cảm xúc đó, 
+                                            Toy Story 4 là một câu chuyện vô cùng cảm động và sâu sắc đến nỗi có thể lấy đi được nước mắt
+                                             của rất nhiều, rất nhiều khán giả lớn tuổi.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cm-section">
+                                <div class="movie-thumb">
+                                    <img src="../img/img-cm-blog/cm-farfromhome.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            [Preview] Spider-Man Far From Home: "Gấu" Mới, Sứ Mệnh Mới!
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Giai đoạn 3 hoành tráng và thành công rực rỡ của 
+                                            vũ trụ điện ảnh Marvel sắp khép lại với chương cuối cùng mang tên: Spider-Man: Far From Home.     
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                                        <!-- END CM-FILM-CONTENT -->
+                    </div>
+                                        <!--START BLOG-FILM-->
+                    <div class="col-6">
+                        <div class="cm-film-title text-uppercase">
+                            <h5>blog điện ảnh</h5>
+                            <div class="divider"></div>
+                        </div>
+                                <!-- START BLOG-FILM-CONTENT -->
+                        <div class="cm-film-content">
+                            <section class="cm-section">
+                                <div class="movie-thumb">
+                                    <img src="../img/img-cm-blog/blog-marvel.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            Loạt Bí Mật Động Trời Marvel Vừa Hé Lộ Về Phase 4
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Mười một năm từ công ty thoi thóp phải “bán con” để sống,
+                                             Marvel vượt xa tất cả đối thủ khác để đứng trên đỉnh thế giới. Ông hoàng này sẽ thống trị
+                                             dài lâu hay đế chế sắp lụi tàn vì phase 4 thiếu Robert Downey Jr. và Chris Evans?     
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cm-section">
+                                <div class="movie-thumb">
+                                    <img src="../img/img-cm-blog/blog-faf.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            Những Gã Trọc Đầu Gây Bão Phòng Vé
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Không đẹp trai như Tom Cruise, diễn chẳng hay cỡ Will Smith nhưng hội đầu trọc đầu hói
+                                            sáu múi vẫn thi nhau càn quét rạp chiếu phim toàn cầu bằng những phim hành động chất-ngất!
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cm-section">
+                                <div class="movie-thumb">
+                                    <img src="../img/img-cm-blog/blog-matbiec.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            Những Điều Bất Ngờ Từ Teaser Mắt Biếc
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Sau khi được tung ra, teaser Mắt Biếc ngay lập tức đã trở thành chủ đề cực hot trên mạng xã hội. 
+                                            Sức ảnh hưởng của nhà văn Nguyễn Nhật Ánh, 
+                                            đạo diễn Victor Vũ và nhạc sĩ Phan Mạnh Quỳnh quả thực không thể bỏ qua.     
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cm-section">
+                                <div class="movie-thumb">
+                                    <img src="../img/img-cm-blog/blog-bufame.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            Galaxy Tràng Thi: Dàn Sao Đua Nhau “Đọ Sức” Với Spider-Man
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Sự kiện ra mắt phim Spider-Man:
+                                             Far From Home diễn ra tại Galaxy Tràng Thi đã thu hút sự chú ý của đông đảo nghệ sĩ nổi tiếng.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                                        <!-- END BLOG-FILM-CONTENT -->
+                    </div>
+                                        <!--END BLOG-FILM-->
+                </div>
+            </div>
+            <!--END COMMENT FILM-->
+
+            <!--START PROMOTION-->
+            <div class="container-fluid px-5 pt-3">
+                <div class="row">
+                    <div class="col-12 w-50">
+                        <div class="cm-film-title text-uppercase">
+                            <h5>Tin khuyến mãi</h5>
+                            <div class="divider"></div>
+                        </div>
+                    </div>
+                <div class="row promotion px-3" >
+                                        <!-- START PROMOTION 1-->
+                    <div class="col-3 promotion-item">
+                        <div class="promotion-item-home">  
+                            <a href="#">
+                                <img src="../img/promotion/promotion-1.jpg">
+                            </a>
+                            <div class="description-hover overlay">
+                                <div class="overlay-info">
+                                    <h2>Galaxy Buôn Ma Thuột: Rạp Mới – Phim Hay – Ưu Đãi Khủng</h2>
+                                    <p></p>
+                                    <p>
+                                        <span style="font-size:14px;">
+                                            <span style="font-family:Arial,Helvetica,sans-serif;">
+                                                <span style="line-height:115%">
+                                                    <span style="line-height:115%">
+                                                        Soạn tin nhắn cú pháp <strong>GLX W gửi 6089 </strong>để nhận hàng trăm ngàn phiếu xem phim 
+                                                        <b>HOÀN TOÀN MIỄN PHÍ </b>và <b>giảm giá 50% bắp nước</b> nào các “mọt phim” Buôn Ma Thuột!
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                                            <!-- END PROMOTION 1-->
+                                            <!-- START PROMOTION 2-->
+                    <div class="col-3 promotion-item">
+                        <div class="promotion-item-home">  
+                            <a href="#">
+                                <img src="../img/promotion/promotion-2.jpg">
+                            </a>
+                            <div class="description-hover overlay">
+                                <div class="overlay-info">
+                                    <h2>Ngỡ Ngàng Trước Độ Sang Chảnh Của Galaxy Buôn Ma Thuột</h2>
+                                    <p></p>
+                                    <p>
+                                        <span style="font-size:14px;">
+                                            <span style="font-family:Arial,Helvetica,sans-serif;">
+                                                <span style="line-height:115%">
+                                                    <span style="line-height:115%">
+                                                       <p>GALAXY CINEMA ĐÃ CÓ MẶT TẠI BUÔN MA THUỘT!</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </p>
+                                    <p></p>  
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                                            <!-- END PROMOTION 2-->
+                                            <!-- START PROMOTION 3-->
+                    <div class="col-3 promotion-item">
+                        <div class="promotion-item-home">  
+                            <a href="#">
+                                <img src="../img/promotion/promotion-3.jpg">
+                            </a>
+                            <div class="description-hover overlay">
+                                <div class="overlay-info">
+                                    <h2>Cập Nhật Thông Tin G-Star 2019</h2>
+                                    <p></p>
+                                    <p>
+                                        <span style="font-size:14px;">
+                                            <span style="font-family:Arial,Helvetica,sans-serif;">
+                                                <span style="line-height:115%">
+                                                    <span style="line-height:115%">
+                                                        Để <b>Galaxy Cinema</b> có thể trao thêm nhiều ưu đãi tới các khách hàng thành viên Gstars, 
+                                                        từ 14.06-07.07.2019, quý khách hàng vui lòng cập nhật đầy đủ những thông tin cần có.
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                                            <!-- END PROMOTION 3-->
+                                            <!-- START PROMOTION 4-->
+                    <div class="col-3 promotion-item">
+                        <div class="promotion-item-home">  
+                            <a href="#">
+                                <img src="../img/promotion/promotion-4.jpg">
+                            </a>
+                            <div class="description-hover overlay">
+                                <div class="overlay-info">
+                                    <h2>Ngày Tri Ân Của Galaxy Cinema - Ngày Thứ Hai ĐẦU TIÊN Mỗi Tháng</h2>
+                                    <p>
+                                    </p><p>
+                                         <span style="font-size:14px;">
+                                            <span style="font-family:Arial,Helvetica,sans-serif;">
+                                                <span style="line-height:115%">
+                                                    <span style="line-height:115%">
+                                                    Từ lâu, chương trình Ngày Tri Ân Nhằm tạo điều kiện thuận lợi hơn cho
+                                                     các khách hàng thả ga xem phim đã trở nên quen thuộc với các khách hàng thân yêu của Galaxy Cinema.
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                                    <!-- END PROMOTION 4-->
+                                    <!-- START PROMOTION 5-->
+                    <div class="col-3 promotion-item">
+                        <div class="promotion-item-home">  
+                            <a href="#">
+                                <img src="../img/promotion/promotion-5.jpg">
+                            </a>
+                            <div class="description-hover overlay">
+                                <div class="overlay-info">
+                                    <h2>
+                                        Giá Vé U22  - Đồng Giá 45k
+                                    </h2>
+                                    <p>
+                                        </p><p>
+                                            Từ 05/06, chỉ 45k/vé 2D lại thả ga bắp nước tại Galaxy Cinema.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                                    <!-- END PROMOTION 5-->
+                                    <!-- START PROMOTION 6-->
+                    <div class="col-3 promotion-item">
+                        <div class="promotion-item-home">  
+                            <a href="#">
+                                <img src="../img/promotion/promotion-6.jpg">
+                            </a>
+                            <div class="description-hover overlay">
+                                <div class="overlay-info">
+                                        <h2>Galaxy Tràng Thi: Hàng Chục Ngàn Vé Xem Phim Miễn Phí Đang Chờ Các Stars</h2>
+                                        <p></p><p>Từ 26.07 – 22.08.2019, các Stars tại Hà Nội sẽ có cơ hội được xem phim thả ga mà không lo “cháy túi” với chương trình Rạp Mới Phim Hay – Ngàn Vé Trao Tay tại Galaxy Tràng Thi.<!--| --></p>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                                    <!-- END PROMOTION 6-->
+                                    <!-- START PROMOTION 7-->
+                    <div class="col-3 promotion-item">
+                        <div class="promotion-item-home">  
+                            <a href="#">
+                                <img src="../img/promotion/promotion-7.jpg">
+                            </a>
+                            <div class="description-hover overlay">
+                                <div class="overlay-info">
+                                        <h2>Go Green! Sống Xanh Cùng Galaxy!</h2>
+                                        <p></p><p><!--| --><span style="font-family:Arial,Helvetica,sans-serif;">
+                                            <span style="font-size:11pt"><span style="line-height:115%">
+                                                Hãy chung tay giải cứu Trái Đất bằng bộ sản phẩm inox gồm 01 muỗng, 01 đôi đũa, 01 cặp ống hút &amp; 01 đồ vệ sinh ống hút từ Galaxy Cinema!</span></span></span></p>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                                    <!-- END PROMOTION 7-->
+                                    <!-- START PROMOTION 8-->
+                    <div class="col-3 promotion-item">
+                        <div class="promotion-item-home">  
+                            <a href="#">
+                                <img src="../img/promotion/promotion-8.jpg">
+                            </a>
+                            <div class="description-hover overlay">
+                                <div class="overlay-info">
+                                        <h2>Xem Bom Tấn, Giá Phấn Chấn Chỉ 1000Đ/ vé Tại Galaxy Cinema</h2>
+                                        <p></p><p>Cơ hội hiếm có dành cho các Stars khi xem phim bom tấn chỉ với 1.000Đ/vé tại Galaxy Cinema!</p>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                                        <!-- END PROMOTION 8-->
+                                        <!-- START PROMOTION 9-->
+                    <div class="col-3 promotion-item">
+                        <div class="promotion-item-home">  
+                            <a href="#">
+                                <img src="../img/promotion/promotion-9.jpg">
+                            </a>
+                            <div class="description-hover overlay">
+                                <div class="overlay-info">
+                                        <h2>Đặt Vé Online - Không Lo Trễ Nải</h2>
+                                        <p></p><p>Giờ đây, chỉ với một thao tác nhỏ là các Stars có thể đến thẳng phòng chiếu xem phim ngay lập tức. &nbsp;</p>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                                        <!-- END PROMOTION 9-->
+                </div>
+                    
+
+                </div>
+            </div>
+            <!--END PROMOTION-->
+            
+            <!--START CONTENT-CEO-GALAXY-->
+            <div class="container-fluid px-5 pt-3">
+                <div class="row ceo-galaxy">
+                    <div class="col-12 w-50">
+                        <div class="cm-film-title text-uppercase">
+                            <h5>galaxy cinema</h5>
+                            <div class="divider"></div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="content-text">
+                            <p>
+                                    <a href="https://www.galaxycine.vn/">                                
+                                        <b>Galaxy Cinema</b>
+                                    </a>
+                               
+                                   là một trong những công ty tư nhân đầu tiên về điện ảnh được thành lập từ năm 2003,
+                                    đã khẳng định thương hiệu là 1 trong 10 địa điểm vui chơi giải trí được yêu thích nhất.
+                                     Ngoài hệ thống rạp chiếu phim hiện đại, thu hút hàng triệu lượt người đến xem,
+                                    <a href="https://www.galaxycine.vn/">
+                                        <b>Galaxy Cinema</b>
+                                    </a>
+                                    còn hấp dẫn khán giả bởi không khí thân thiện cũng như chất lượng dịch vụ hàng đầu.
+                            </p>
+                            <p>
+                                Đến website <i>galaxycine.vn</i>, quý khách sẽ được cập nhật nhanh chóng các phim hay nhất phim mới nhất đang chiếu
+                                hoặc sắp chiếu. Lịch chiếu tại mọi hệ thống rạp chiếu phim của 
+                                <a href="https://www.galaxycine.vn/"><b>Galaxy Cinema
+                                </b>
+                                </a>    
+                                cũng được cập nhật đầy đủ hàng ngày
+                                hàng giờ trên trang chủ.
+                            </p>
+                            <p>
+                                Đặt vé tại Galaxy Cinema dễ dàng chỉ sau vài thao tác vô cùng đơn giản. 
+                                Để mua vé, hãy vào tab Mua vé. Quý khách có thể chọn Mua vé theo phim, theo rạp, theo ngày tùy cách nào tiện lợi nhất
+                                cho bản thân.Sau đó, tiến hành mua vé theo các bước hướng dẫn. Chỉ trong vài phút, quý khách sẽ nhận được tin nhắn
+                                và email phản hồi Đặt vé thành công của 
+                                <a href="https://www.galaxycine.vn/">
+                                    <b>
+                                        Galaxy Cinema.
+                                    </b>
+                                </a>   
+                                Quý khách có thể dùng tin nhắn lấy vé tại quầy vé của 
+                                  Galaxy Cinema hoặc quét mã QR để một bước vào rạp mà không cần tốn thêm bất kỳ công đoạn nào nữa. 
+                            </p>
+                            <p>
+                                Nếu bạn đã chọn được phim hay để xem, hãy đặt vé cực nhanh bằng box Mua Vé Nhanh ngay từ Trang Chủ.
+                                Chỉ cần một phút, tin nhắn và email phản hồi của
+                                <a href="https://www.galaxycine.vn/">
+                                    <b>
+                                        Galaxy Cinema.
+                                    </b>
+                                </a> 
+                                sẽ gửi ngay vào điện thoại và hộp mail của bạn.
+                            </p>
+                            <p>
+                                Nếu chưa quyết định sẽ xem phim mới nào, hãy tham khảo các bộ phim hay trong mục Phim Đang Chiếu cũng như
+                                Phim Sắp Chiếu tại rạp chiếu phim bằng cách vào mục Bình Luận Phim ở Góc Điện Ảnh để đọc những bài bình luận
+                                chân thật nhất, tham khảo và cân nhắc. Sau đó, quý khách hãy đặt vé bằng box Mua Vé Nhanh ngay ở đầu trang để chọn
+                                được suất chiếu và chỗ ngồi vừa ý nhất.
+                            </p>
+                            <p>
+                                <a href="https://www.galaxycine.vn/">
+                                    <b>
+                                        Galaxy Cinema.
+                                   </b>
+                                </a> 
+                                luôn có những chương trình khuyến mãi, ưu đãi, quà tặng vô cùng hấp dẫn như giảm giá vé,
+                                tặng vé xem phim miễn phí, tặng Combo, tặng quà phim...dành cho quý khách. 
+                            </p>
+                            <p>
+                                Trang web galaxycine.vn còn có mục Góc Điện Ảnh - sở hữu lượng dữ liệu về phim, diễn viên và đạo diễn,
+                                giúp quý khách dễ dàng chọn được phim mình yêu thích và nâng cao kiến thức về điện ảnh của bản thân. 
+                                Ngoài ra, vào mỗi tháng, 
+                                <a href="https://www.galaxycine.vn/">
+                                    <b>
+                                        Galaxy Cinema.
+                                    </b>
+                                </a> 
+                                cũng giới thiệu các phim sắp chiếu hot nhất trong mục Phim Hay Tháng 
+                                để quý khách sớm có sự tính toán.
+                            </p>
+                            <p>
+                                Hiện nay, 
+                                <a href="https://www.galaxycine.vn/">
+                                    <b>
+                                        Galaxy Cinema.
+                                    </b>
+                                </a> 
+                                đang ngày càng phát triển hơn nữa với các chương trình đặc sắc, các khuyến mãi hấp dẫn,
+                                đem đến cho khán giả những bộ phim bom tấn của thế giới và Việt Nam nhanh chóng và sớm nhất.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!--END CONTENT-CEO-GALAXY-->
+
+             <!--START FOOTER-->
+            <footer class="bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="footer-widget">
+                                <h4 class="title-widget">Giới thiệu</h4>
+                                <ul class="p-0">
+                                    <li><a>về chúng tôi</a></li>
+                                    <li><a>thỏa thuận sử dụng</a></li>
+                                    <li><a>quy chế hoạt động</a></li>
+                                    <li><a>chính sách bảo mật</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="footer-widget">
+                                <h4 class="title-widget">Góc điện ảnh</h4>
+                                <ul class="p-0">
+                                    <li><a>Thể loại phim</a></li>
+                                    <li><a>bình luận phim</a></li>
+                                    <li><a>blog điện ảnh</a></li>
+                                    <li><a>phim hay tháng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="footer-widget">
+                                <h4 class="title-widget">hỗ trợ</h4>
+                                <ul class="p-0">
+                                    <li><a>góp ý</a></li>
+                                    <li><a>sale & services</a></li>
+                                    <li><a>rạp / giá vé</a></li>
+                                    <li><a>tuyển dụng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="footer-widget">
+                                <h4 class="title-widget">Giới thiệu</h4>
+                                <div class="title-widget-i">
+                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                    <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </div>
+                                <h4 class="title-widget">download app</h4>   
+                                <div class="title-widget-i">
+                                    <i class="fa fa-apple" aria-hidden="true"></i>
+                                    <i class="fa fa-google" aria-hidden="true"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+             <!--END FOOTER-->
+                                    <!--END MAIN-->
+          <script src="../../jquery-3.3.1.slim.min.js" ></script>
+          <script src="../../popper.min.js" ></script>
+          <script src="../../bootstrap.min.js"></script>
+        </body>
+      </html>

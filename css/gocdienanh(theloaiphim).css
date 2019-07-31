@@ -1,0 +1,127 @@
+.row .col-8 .row select{
+    padding: 10px 15px;
+    margin: 0px 10px;
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+section .movieofmonth{
+    display: table;
+    margin: 30px 0;
+}
+section .movieofmonth .item-thumb{
+    float: left;
+    margin: 0 20px 0 0;
+    height: auto;
+    position: relative;
+}
+section .movieofmonth .movieofmonth:hover h3{
+    color: #f26b38 !important;
+}
+section .movieofmonth .item-thumb:hover .has-overlay{
+    opacity: 1;
+}
+section .movieofmonth .item-thumb .has-overlay{
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: 1s;
+    left: 0;
+}
+section .movieofmonth .item-thumb .item-content{
+    float: left;
+}
+section .movieofmonth .item-thumb a{
+    display: block;
+    width: 280px;
+    height: auto;
+}
+section .movieofmonth .item-thumb a img{
+    display: block;
+    width: 280px;
+    height: auto;
+}
+section .movieofmonth .item-content h3{
+    color: black;
+    font-size: 24px;
+    margin-bottom: 20px;
+   
+}
+section .movieofmonth .item-content p{
+    color: #a0a3a7;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    margin: 20px 0;
+    max-height: 63px;    
+    text-align: justify;
+}
+
+/*START CSS PROMOTION */
+.promotion .promotion-item{
+    padding: 10px;
+}
+.promotion .promotion-item .promotion-item-home {
+    position: relative;
+}
+.promotion .promotion-item .promotion-item-home img{
+    width: 100%;
+    height: auto;
+}
+.promotion .promotion-item .promotion-item-home .overlay {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    opacity: 0;
+    transition: 1s;
+    left: 0;
+}
+.promotion .promotion-item .promotion-item-home:hover .overlay {
+    opacity: 1;
+    height: 100%;
+}
+.promotion .promotion-item .promotion-item-home .overlay .overlay-info{
+    z-index: 50;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    top: 5px;
+}
+.promotion .promotion-item .promotion-item-home .overlay .overlay-info h2{
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: block;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.promotion .promotion-item .promotion-item-home .overlay .overlay-info p {
+    margin: 15px 0;
+    color: #ffffff;
+    line-height: 22px;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*END CSS PROMOTION */

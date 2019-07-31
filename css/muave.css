@@ -1,0 +1,104 @@
+*{box-sizing: border-box;}
+.nav-tag{
+    border-bottom: 1px solid grey;
+}
+.nav-tag .nav-item .nav-hover{
+    color: grey;
+}
+.nav-tag .nav-item .nav-hover:hover{
+    color: black;
+    border-bottom: 2px solid  #f26b38;
+}
+.panel .panel-heading{
+    border-radius: 0;
+    color: #ffffff;
+    background-color: #f26b38;
+    border-color: #f26b38;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px 15px;
+}
+.panel .panel-heading .pannel-title{
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.panel .list-group .showtime-row{
+    width: 60px;
+    float: left;
+    margin-right: 15px;
+    padding: 15px 0px;
+    
+}
+.panel .list-group .showtime-row img{
+    width: 100%
+}
+.panel .list-group .title-movie{
+    float: left;
+    padding: 13px 0px;
+}
+.panel .list-group .title-movie p{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+.panel .list-group li {
+    list-style: none;
+    border-bottom: 1px solid grey;
+    border-collapse: collapse;
+    padding: 20px 10px; 
+}
+.panel .list-group li:hover {
+    cursor: pointer;
+}
+.panel .list-group li a{
+    color: grey;
+    display: flex;
+    text-decoration: none;
+    transition-duration: 200ms;
+}
+.panel .list-group li:hover{
+    background: #f5f5f5;
+}
+/*START CSS FOLLOW FILM */
+.panel #my-list-time  li div{
+    padding: 10px 0;
+}
+.panel #my-list-time  li div p{
+    padding-bottom: 10px;
+}
+.panel #my-list-time  li div article{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+.panel #my-list-time  li div article button{
+    padding: 5px 15px;
+    margin: 0px 10px;
+    border: #f26b38 1px solid;
+    color: #f26b38;
+    background: transparent;
+}
+/*END CSS FOLLOW FILM */
+
+/*START CSS FOLLOW ROOM */
+.panel #room-my-list-time  li div{
+    padding: 10px 0;
+}
+.panel #room-my-list-time  li div p{
+    padding-bottom: 10px;
+}
+.panel #room-my-list-time  li div article{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+.panel #room-my-list-time  li div article button{
+    padding: 5px 15px;
+    margin: 0px 10px;
+    border: #f26b38 1px solid;
+    color: #f26b38;
+    background: transparent;
+}
+/*END CSS FOLLOW ROOM */

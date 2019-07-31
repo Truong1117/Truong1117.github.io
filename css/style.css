@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro|Montserrat|Open+Sans|Saira+Stencil+One&display=swap');
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Saira Stencil One', cursive;
+font-family: 'Crimson Pro', serif;
+font-family: 'Montserrat', sans-serif; */
+/* START CSS HEADER*/
+*{box-sizing: border-box}
+@font-face {
+    font-family: Font-Roboto-Thin;
+    src: url(../Roboto-Thin.ttf);
+  }
+@font-face {
+    font-family: Font-Roboto-Light;
+    src: url(../Roboto-Light.ttf);
+  }    
+body {
+    font-family: Font-Roboto-Light ;
+    font-size: 18px;
+    font-weight: 500;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+/*START CSS MODAL */
+.modal-header {
+    font-family: 'Open Sans', sans-serif;
+    display: -ms-flexbox;
+    display: inline-block;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+.modal-body .container-fluid .row section{
+    width: 100%;
+    padding: 10px 0px;
+}
+.modal-content h4{
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.modal-body .container-fluid .row section input{
+    line-height: 2rem;
+    width: 100%;
+    padding: 10px 5px;
+    background: #f1f1f1;
+    border: none;
+}
+.modal-footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.modal-footer button {
+    background: #5eb762;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+/*END CSS MODAL */
+header .container-fluid .nav a{
+    color: whitesmoke;
+    font-family: "Roboto";
+}
+header .container-fluid .nav a:hover{
+    color: #f26b38;
+    font-family: "Roboto";
+    text-decoration: none;
+    cursor: pointer;
+}
+header .container-fluid .nav a.botarrow::after{
+    font-family: 'FontAwesome';
+    font-weight: 400;
+    line-height: 1;
+    content: '\f107';
+    margin-left: 5px;
+}
+/* START SUB_LIST MOVIE HOVER */
+
+.sub.movie .sub-menu-movie .visible-lg-block {
+    min-width: 1200px;
+}
+.sub.movie .sub-menu-movie .visible-lg-block .submenu-title{
+    padding: 20px 0px;
+}
+.sub.movie .sub-menu-movie .visible-lg-block .submenu-title .col-12 h3 a{
+    text-decoration: none;
+}
+.divider{
+    max-width: 50px;
+    border-color: #f26b38;
+    background: #f26b38;
+    height: 3px;
+    margin: 15px 0px;
+}
+.sub.movie .sub-menu-movie .visible-lg-block .row .col-3 .card .car-font-p {
+    text-transform: uppercase;
+    padding: 15px 0px;
+}
+
+
+.sub.movie .sub-menu-movie .visible-lg-block .row .col-12 h3 a{
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+    text-decoration: none;
+}
+.sub-movie{
+    position: relative;
+}
+.sub-menu-movie {
+    position: absolute;
+    display: none;
+}
+.sub-movie:hover .sub-menu-movie{
+    display: flex;
+   min-width: 1070px;
+   left: 0;
+   top: 100%;
+   z-index: 10;
+}
+/* END SUB_LIST MOVIE HOVER */
+/* START CSS GOC DIEN ANH*/
+.sub-film{
+    position: relative;
+}
+.sub-menu-film{
+    position: absolute;
+    display: none;
+}
+.sub-film:hover .sub-menu-film {
+    left: -20px;
+    display: block;
+    min-width: 200px;
+    z-index: 10;
+    background: #343a40;
+    color:#fff;
+    padding: 20px;
+    list-style: none;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.sub-menu-even{
+    position: absolute;
+    display: none;
+}
+.sub-film:hover .sub-menu-even {
+    left: -50px;
+    display: block;
+    min-width: 200px;
+    z-index: 10;
+    background: #343a40;
+    color:#fff;
+    padding: 20px;
+    list-style: none;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.sub-film:hover .sub-menu-film a{
+    cursor: pointer;
+}
+/* START CSS GOC DIEN ANH*/
+/* END CSS HEADER*/
+
+/*START CSS SLIDE SHOW */
+.carousel-inner {
+    width: 100%;
+    position: relative;
+}
+.carousel-inner .box-buy-ticket {
+    position: absolute;
+    right: 10%;
+    top: 30px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 14px;
+    width: 400px;
+    height: auto;
+}
+.box-buy-ticket .box-header{
+background: #f26b38;
+text-align: center;
+width: 40%;
+padding: 10px 0px;
+font-size: 18px;
+text-transform: uppercase;
+}
+.carousel-inner .box-buy-ticket .box-header p{
+font-size: 17px;
+margin: auto;
+text-transform: uppercase;
+color: white;
+    }
+/*END CSS SLIDE SHOW */
+
+/*START BOX - BUY TICKET */
+.box-buy-ticket section nav .nav-pills .nav-item a:hover{
+    color: rgba(236, 106, 20, 0.932)  !important;
+}
+.box-buy-ticket section nav .nav-pills .nav-item:hover div{
+    background: rgba(236, 106, 20, 0.932) !important;
+}
+.divider-nav {
+    background: white;
+    height: 3px;
+    margin: 0px 0px;
+    padding: 0px;
+}
+.tab-content .tab-pane .form-group {
+    margin-bottom: 1rem;
+    overflow:hidden;
+}
+
+.tab-content .tab-pane .form-group select {
+     color: aquamarine;
+    }
+.tab-content .tab-pane .form-group option:checked { color: red; }
+/*END BOX - BUY TICKET */
+
+/* START  CSS MAIN */
+/* START  CSS DEMO FILM */
+.container-fluid .d-flex button{
+    color: #f26b38;
+    background: transparent;
+    border: #f26b38 1px solid;
+    padding: 5px 20px;
+}
+.container-fluid .d-flex button:hover{
+    background: #f26b38;
+    color: white;
+}
+/* END  CSS DEMO FILM */
+
+/* START CSS COMMENT FILM */
+.container-fluid .row .col-6 .cm-film-content .cm-section{
+    display: table;
+    width: 100%;
+    margin: 30px 0;
+}
+.container-fluid .row .col-6 .cm-film-content .cm-section .movie-thumb{
+    float: left;
+    position: relative;
+    margin: 0 20px 0 0;
+  
+}
+.container-fluid .row .col-6 .cm-film-content .cm-section .movie-thumb img{
+    width: 220px;
+    height: auto;
+}
+.container-fluid .row .col-6 .cm-film-content .cm-section .cm-section-content h5{
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 58px;
+}
+.container-fluid .row .col-6 .cm-film-content .cm-section .cm-section-content h5 a{
+    line-height: 22px;
+    color: #43464b;
+}
+.container-fluid .row .col-6 .cm-film-content .cm-section .cm-section-content .blog-content{
+    color: #a0a3a7;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    font-size: 14px;
+    text-align: justify;
+    max-height: 42px;
+}
+/* END CSS COMMENT FILM */
+
+/*START CSS PROMOTION */
+.promotion .promotion-item{
+    padding: 10px;
+}
+.promotion .promotion-item .promotion-item-home {
+    position: relative;
+}
+.promotion .promotion-item .promotion-item-home .overlay {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    opacity: 0;
+    transition: 1s;
+    left: 0;
+}
+.promotion .promotion-item .promotion-item-home:hover .overlay {
+    opacity: 1;
+    height: 100%;
+}
+.promotion .promotion-item .promotion-item-home .overlay .overlay-info{
+    z-index: 50;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    top: 5px;
+}
+.promotion .promotion-item .promotion-item-home .overlay .overlay-info h2{
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: block;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.promotion .promotion-item .promotion-item-home .overlay .overlay-info p {
+    margin: 15px 0;
+    color: #ffffff;
+    line-height: 22px;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*END CSS PROMOTION */
+
+/* START CSS CEO-GALAXY*/
+.ceo-galaxy .col-12 .content-text p{
+text-align: justify;
+font-size: 14px;
+font-family: Font-Roboto-Thin;
+}
+.ceo-galaxy .col-12 .content-text p a{
+font-family: Roboto-Bold;
+color: #000;
+font-size: 16px;
+text-decoration: none;
+    }
+/* END CSS CEO-GALAXY*/
+
+/* START CSS FOOTER*/
+.footer-widget {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 40px 0px 0px;
+}
+.footer-widget .title-widget{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    line-height: 1;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    padding-left: 16px;
+}
+.footer-widget .title-widget::before{
+    background-color: #f26b38;
+    content: "";
+    height: 22px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 4px;
+}
+.footer-widget ul{
+    list-style: none;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer-widget ul li:hover{
+    color: #f26b38;
+    cursor: pointer;
+}
+.footer-widget .title-widget-i{
+    padding: 20px 0px;
+}
+.title-widget-i i{
+    font-size: 26px;
+    margin-right: 14px;
+}
+.title-widget-i i:hover{
+    color: #f26b38;
+    cursor: pointer;
+}
+/* END CSS FOOTER*/
+/* END  CSS MAIN */ 
