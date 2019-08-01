@@ -71,29 +71,37 @@
                 <div class="container-fluid bg-light">
                     <!-- ROW-1 -->
                     <div class="row py-4">
-                        <!-- LOGO-->
-                        <div class="col-md-4 ">
+                        <!--START LOGO-->
+                        <div class="col-md-4 d-none d-md-block ">
                             <div class="lolgo">
                                 <a href="index.html">
                                     <img src="img/galaxy-logo.jpg">
                                 </a>
                             </div>
                         </div>
+                        <div class="col-4 d-block d-md-none ">
+                            <div class="lolgo" style="width: 109px;height: 48px;">
+                                <a href="index.html">
+                                    <img style="width: 109px;height: 48px;" src="img/galaxy-logo-mobile.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <!--END LOGO-->
                         <!--SEARCH FORM-->
-                        <div class="col-md-8 pl-5 d-flex justify-content-between ">
-                            <form id="search-form d-flex" class="border rounded py-2 bg-white px-3" >
+                        <div class="col-md-8 col-8 pl-5 d-md-flex justify-content-between ">
+                            <form id="search-form d-flex" class="border rounded py-md-2 bg-white px-md-3 d-none d-md-block" >
                                 <input placeholder="Tìm tên phim, diễn viên..." class="border-0">
                                 <button type="submit" class="bg-transparent border-0">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                 </button>
                             </form>
-                            <nav class="nav">
-                                <a class="nav-link active text-secondary" data-toggle="modal" data-target="#exampleModalCenter">
+                            <nav class="nav float-right float-md-none">
+                                <a class="nav-link active text-secondary " data-toggle="modal" data-target="#exampleModalCenter">
                                     <i class="fa fa-user" aria-hidden="true"></i>   
                                     Đăng nhập
                                 </a>
-                                <a class="nav-link text-danger" href="#">VN</a>
-                                <a class="nav-link text-secondary" href="#">EN</a>
+                                <a class="nav-link text-danger d-none d-md-block" href="#">VN</a>
+                                <a class="nav-link text-secondary d-none d-md-block" href="#">EN</a>
                             </nav>
                         </div>
                         
@@ -101,8 +109,8 @@
                 </div>
                 <!-- Nav header-->
                 <div class="container-fluid bg-dark">
-                    <nav>
-                        <ul class="d-flex nav justify-content-between px-5 py-1">
+                    <nav class="d-none d-md-block">
+                        <ul class=" d-flex nav justify-content-between px-5 py-1">
                             <li><a class="nav-link active" href="muave.html">MUA VÉ</a></li>
                             <!-- LIST MOVIE-->
                             <li class="sub-movie">
@@ -280,7 +288,7 @@
                     </a>
                 </div>
             <!-- START BOX - BUY TICKET-->
-                <div class="box-buy-ticket">
+                <div class="box-buy-ticket d-none d-md-block">
                     <section class="pl-3 pt-3">
                         <div class="box-header">
                             <p>Mua vé nhanh</p>
@@ -354,9 +362,7 @@
                             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
                             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
                         </div>
-                    </section>
-                    <section class="pr-3">
-                        <div class="box-header" style="float: right">
+                        <div class="box-header mr-3" style="float: right">
                             <p>Mua vé</p>
                         </div>
                     </section>
@@ -364,13 +370,94 @@
             <!-- END BOX - BUY TICKET-->
             </div>
             <!--END SLIDE SHOW-->
+            <!--MOBILE START BOX-BUY TICKET-->
+            <div class="box-buy-ticket d-md-none">
+                <section class="pl-3 pt-3">
+                    <h3>
+                        <a href="#" style="color:black">Mua vé nhanh</a>
+                        <div class="divider"></div>
+                    </h3>
+                </section>
+                <section>
+                    <nav>
+                        <ul class="nav p-3 nav-justified nav-pills">
+                            <li class="nav-item ">
+                                <a class="nav-link active bg-light text-dark" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                                    Theo phim
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class=" nav-link bg-light text-dark" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                    Theo ngày
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link bg-light text-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                    Theo rạp
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="tab-content px-3" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="form-group">
+                                    <select class="form-control border-0 text-success font-weight-bold" style="background:  rgba(255, 255, 255, 0.3);" id="exampleFormControlSelect1">
+                                        <option>Chọn phim</option>
+                                        <option>Fast & Furious: Hobbs & Shaw</option>
+                                        <option>The Lion King</option>
+                                        <option>Spider-Man: Far From Home</option>
+                                        <option>Sadako</option>
+                                        <option>Step Up China</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control text-success font-weight-bold border-0" style="background:  rgba(255, 255, 255, 0.3);" id="exampleFormControlSelect1">
+                                        <option>Chọn rạp</option>
+                                        <option>Galaxy - Hội An</option>
+                                        <option>Galaxy - Đà Nẵng</option>
+                                        <option>Galaxy - Hồ Chí Minh</option>
+                                        <option>Galaxy - Hà Nội</option>
+                                        <option>Galaxy - Đà Lạt</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control text-success font-weight-bold border-0" style="background:  rgba(255, 255, 255, 0.3);" id="exampleFormControlSelect1">
+                                        <option>Chọn ngày</option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control text-success font-weight-bold border-0" style="background:  rgba(255, 255, 255, 0.3);" id="exampleFormControlSelect1">
+                                        <option>Chọn suất</option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                    </select>
+                                </div>
+                                
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                    </div>
+                </section>
+                <section class="w-100 px-3">
+                    <div class="box-header-mobile">
+                        <p>Mua vé</p>
+                    </div>
+                </section>
+            </div>
+        <!--MOBILE END BOX - BUY TICKET-->
 
                                         <!--START MAIN-->
 
             <!--START DEMO FILM -->
-            <div class="container-fluid px-5 pt-3">
-                <ul class="nav nav-pills mb-3 border-bottom w-50" id="pills-tab" role="tablist">
-                    <li class="nav-item">
+            <div class="container-fluid px-md-5 pt-3">
+                <ul class="nav nav-pills mb-3 border-bottom w-100" id="pills-tab" role="tablist">
+                    <li class="nav-item ">
                         <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
                            <h5 class="text-secondary">PHIM ĐANG CHIẾU</h5> 
                         </a>
@@ -384,8 +471,8 @@
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                         <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-4">
+                            <div class="row py-2">
+                                <div class="col-md-4 col-6">
                                     <div class="card bg-transparent border-0">
                                         <img src="img/lion-king.jpg" class="card-img-top " alt="...">
                                         <div class="card-body text-uppercase p-0 pt-2">
@@ -393,7 +480,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-md-4 col-6">
                                     <div class="card bg-transparent border-0">
                                         <img src="img/thattuyetvoikhibenem.jpg" class="card-img-top " alt="...">
                                         <div class="card-body text-uppercase p-0 pt-2">
@@ -401,7 +488,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-md-4 col-6">
                                     <div class="card bg-transparent border-0">
                                         <img src="img/spider-man.jpg" class="card-img-top " alt="...">
                                         <div class="card-body text-uppercase p-0 pt-2">
@@ -410,7 +497,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-md-4 col-6">
                                     <div class="card bg-transparent border-0">
                                         <img src="img/sadako.jpg" class="card-img-top " alt="...">
                                         <div class="card-body text-uppercase p-0 pt-2">
@@ -419,7 +506,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-md-4 col-6">
                                     <div class="card bg-transparent border-0">
                                         <img src="img/step-up-6.jpg" class="card-img-top " alt="...">
                                         <div class="card-body text-uppercase p-0 pt-2">
@@ -428,7 +515,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-md-4 col-6">
                                     <div class="card bg-transparent border-0">
                                         <img src="img/doichongthamnhung.jpg" class="card-img-top " alt="...">
                                         <div class="card-body text-uppercase p-0 pt-2">
@@ -449,15 +536,15 @@
             <!--END DEMO FILM -->
 
             <!--START COMMENT FILM-->
-            <div class="container-fluid px-5 pt-3">
+            <div class="container-fluid px-md-5 pt-md-3">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6 col-12">
                         <div class="cm-film-title text-uppercase">
                             <h5>bình luận phim</h5>
                             <div class="divider"></div>
                         </div>
                                         <!-- START CM-FILM-CONTENT -->
-                        <div class="cm-film-content">
+                        <div class="cm-film-content d-none d-md-block">
                             <section class="cm-section">
                                 <div class="movie-thumb">
                                     <img src="img/img-cm-blog/cm-lionking.jpg">
@@ -534,15 +621,94 @@
                             </section>
                         </div>
                                         <!-- END CM-FILM-CONTENT -->
+
+                                         <!--MOBILE START CM-FILM-CONTENT -->
+                        <div class="cm-film-content d-md-none d-block">
+                            <section class="cm-section">
+                                <div class="movie-thumb-mobile">
+                                    <img src="img/img-cm-blog/cm-lionking.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            [Review] Vua Sư Tử: Kịch Bản Kinh Điển Kết Hợp CGI Đỉnh Cao
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Tại sao Disney lại muốn remake những tác phẩm hoạt hình đã đi vào kinh điển. 
+                                            Chắc chắn không nằm ngoài việc mỗi tác phẩm đều mang lại cho nhà Chuột hàng núi tiền.         
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cm-section">
+                                <div class="movie-thumb-mobile">
+                                    <img src="img/img-cm-blog/cm-spiderman.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            [Review] Người Nhện: Marvel Học Tập Hướng Đen Tối Của DC? 
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Nếu cho rằng Avengers: 
+                                            Endgame là đỉnh cao những cú troll của Marvel thì trò lừa từ đầu đến cuối Spider-Man: 
+                                            Far From Home sẽ hoàn toàn làm bạn “đứng hình”.  
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cm-section">
+                                <div class="movie-thumb-mobile">
+                                    <img src="img/img-cm-blog/cm-toystory6.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            [Review] Toy Story 4: Phim Hoạt Hình Thôi Mà, Có Cần Phải Hay Vậy Không!
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Xem phim hoạt hình thì chỉ cần vui là được! Cũng đúng, nhỉ? Nhưng, không chỉ mỗi cảm xúc đó, 
+                                            Toy Story 4 là một câu chuyện vô cùng cảm động và sâu sắc đến nỗi có thể lấy đi được nước mắt
+                                             của rất nhiều, rất nhiều khán giả lớn tuổi.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cm-section">
+                                <div class="movie-thumb-mobile">
+                                    <img src="img/img-cm-blog/cm-farfromhome.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            [Preview] Spider-Man Far From Home: "Gấu" Mới, Sứ Mệnh Mới!
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Giai đoạn 3 hoành tráng và thành công rực rỡ của 
+                                            vũ trụ điện ảnh Marvel sắp khép lại với chương cuối cùng mang tên: Spider-Man: Far From Home.     
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                                        <!-- MOBILE END CM-FILM-CONTENT -->
                     </div>
                                         <!--START BLOG-FILM-->
-                    <div class="col-6">
+                    <div class="col-md-6 col-12">
                         <div class="cm-film-title text-uppercase">
                             <h5>blog điện ảnh</h5>
                             <div class="divider"></div>
                         </div>
                                 <!-- START BLOG-FILM-CONTENT -->
-                        <div class="cm-film-content">
+                        <div class="cm-film-content d-none d-md-block">
                             <section class="cm-section">
                                 <div class="movie-thumb">
                                     <img src="img/img-cm-blog/blog-marvel.jpg">
@@ -619,6 +785,85 @@
                             </section>
                         </div>
                                         <!-- END BLOG-FILM-CONTENT -->
+
+                                        <!--MOBILE START BLOG-FILM-CONTENT -->
+                        <div class="cm-film-content d-md-none d-block">
+                            <section class="cm-section">
+                                <div class="movie-thumb-mobile">
+                                    <img src="img/img-cm-blog/blog-marvel.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            Loạt Bí Mật Động Trời Marvel Vừa Hé Lộ Về Phase 4
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Mười một năm từ công ty thoi thóp phải “bán con” để sống,
+                                             Marvel vượt xa tất cả đối thủ khác để đứng trên đỉnh thế giới. Ông hoàng này sẽ thống trị
+                                             dài lâu hay đế chế sắp lụi tàn vì phase 4 thiếu Robert Downey Jr. và Chris Evans?     
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cm-section">
+                                <div class="movie-thumb-mobile">
+                                    <img src="img/img-cm-blog/blog-faf.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            Những Gã Trọc Đầu Gây Bão Phòng Vé
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Không đẹp trai như Tom Cruise, diễn chẳng hay cỡ Will Smith nhưng hội đầu trọc đầu hói
+                                            sáu múi vẫn thi nhau càn quét rạp chiếu phim toàn cầu bằng những phim hành động chất-ngất!
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cm-section">
+                                <div class="movie-thumb-mobile">
+                                    <img src="img/img-cm-blog/blog-matbiec.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            Những Điều Bất Ngờ Từ Teaser Mắt Biếc
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Sau khi được tung ra, teaser Mắt Biếc ngay lập tức đã trở thành chủ đề cực hot trên mạng xã hội. 
+                                            Sức ảnh hưởng của nhà văn Nguyễn Nhật Ánh, 
+                                            đạo diễn Victor Vũ và nhạc sĩ Phan Mạnh Quỳnh quả thực không thể bỏ qua.     
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cm-section">
+                                <div class="movie-thumb-mobile">
+                                    <img src="img/img-cm-blog/blog-bufame.jpg">
+                                </div>
+                                <div class="cm-section-content">
+                                    <h5>
+                                        <a href="#">
+                                            Galaxy Tràng Thi: Dàn Sao Đua Nhau “Đọ Sức” Với Spider-Man
+                                        </a>
+                                    </h5>
+                                    <div class="blog-content hidden-xs">
+                                        <p>
+                                            Sự kiện ra mắt phim Spider-Man:
+                                             Far From Home diễn ra tại Galaxy Tràng Thi đã thu hút sự chú ý của đông đảo nghệ sĩ nổi tiếng.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                                        <!--MOBILE END BLOG-FILM-CONTENT -->
                     </div>
                                         <!--END BLOG-FILM-->
                 </div>
@@ -626,7 +871,7 @@
             <!--END COMMENT FILM-->
 
             <!--START PROMOTION-->
-            <div class="container-fluid px-5 pt-3">
+            <div class="container-fluid px-md-5 pt-3">
                 <div class="row">
                     <div class="col-12 w-50">
                         <div class="cm-film-title text-uppercase">
@@ -634,9 +879,9 @@
                             <div class="divider"></div>
                         </div>
                     </div>
-                <div class="row promotion px-3" >
+                <div class="row promotion" >
                                         <!-- START PROMOTION 1-->
-                    <div class="col-3 promotion-item">
+                    <div class="col-md-3 promotion-item">
                         <div class="promotion-item-home">  
                             <a href="#">
                                 <img src="img/promotion/promotion-1.jpg">
@@ -664,7 +909,7 @@
                     </div>
                                             <!-- END PROMOTION 1-->
                                             <!-- START PROMOTION 2-->
-                    <div class="col-3 promotion-item">
+                    <div class="col-md-3 promotion-item">
                         <div class="promotion-item-home">  
                             <a href="#">
                                 <img src="img/promotion/promotion-2.jpg">
@@ -691,7 +936,7 @@
                     </div>
                                             <!-- END PROMOTION 2-->
                                             <!-- START PROMOTION 3-->
-                    <div class="col-3 promotion-item">
+                    <div class="col-md-3 promotion-item">
                         <div class="promotion-item-home">  
                             <a href="#">
                                 <img src="img/promotion/promotion-3.jpg">
@@ -719,7 +964,7 @@
                     </div>
                                             <!-- END PROMOTION 3-->
                                             <!-- START PROMOTION 4-->
-                    <div class="col-3 promotion-item">
+                    <div class="col-md-3 promotion-item">
                         <div class="promotion-item-home">  
                             <a href="#">
                                 <img src="img/promotion/promotion-4.jpg">
@@ -746,7 +991,7 @@
                     </div>
                                     <!-- END PROMOTION 4-->
                                     <!-- START PROMOTION 5-->
-                    <div class="col-3 promotion-item">
+                    <div class="col-md-3 promotion-item">
                         <div class="promotion-item-home">  
                             <a href="#">
                                 <img src="img/promotion/promotion-5.jpg">
@@ -766,7 +1011,7 @@
                     </div>
                                     <!-- END PROMOTION 5-->
                                     <!-- START PROMOTION 6-->
-                    <div class="col-3 promotion-item">
+                    <div class="col-md-3 promotion-item">
                         <div class="promotion-item-home">  
                             <a href="#">
                                 <img src="img/promotion/promotion-6.jpg">
@@ -781,7 +1026,7 @@
                     </div>
                                     <!-- END PROMOTION 6-->
                                     <!-- START PROMOTION 7-->
-                    <div class="col-3 promotion-item">
+                    <div class="col-md-3 promotion-item">
                         <div class="promotion-item-home">  
                             <a href="#">
                                 <img src="img/promotion/promotion-7.jpg">
@@ -798,7 +1043,7 @@
                     </div>
                                     <!-- END PROMOTION 7-->
                                     <!-- START PROMOTION 8-->
-                    <div class="col-3 promotion-item">
+                    <div class="col-md-3 promotion-item">
                         <div class="promotion-item-home">  
                             <a href="#">
                                 <img src="img/promotion/promotion-8.jpg">
@@ -813,7 +1058,7 @@
                     </div>
                                         <!-- END PROMOTION 8-->
                                         <!-- START PROMOTION 9-->
-                    <div class="col-3 promotion-item">
+                    <div class="col-md-3 promotion-item">
                         <div class="promotion-item-home">  
                             <a href="#">
                                 <img src="img/promotion/promotion-9.jpg">
@@ -828,6 +1073,75 @@
                     </div>
                                         <!-- END PROMOTION 9-->
                 </div>
+
+                <!--MOBILE START PROMOTION-->
+                    <div class="row ml-0" >
+                                        <!-- START PROMOTION 1-->
+                        <div class="col-6">
+                                <a href="#" class="w-100">
+                                    <img src="img/promotion/promotion-1.jpg">
+                                </a>   
+
+                        </div>
+                                                <!-- END PROMOTION 1-->
+                                                <!-- START PROMOTION 2-->
+                        <div class="col-6">
+                                <a href="#">
+                                    <img src="img/promotion/promotion-2.jpg">
+                                </a>
+                        </div>
+                                                <!-- END PROMOTION 2-->
+                                                <!-- START PROMOTION 3-->
+                        <div class="col-6">  
+                                <a href="#">
+                                    <img src="img/promotion/promotion-3.jpg">
+                                </a>     
+                        </div>
+                                                <!-- END PROMOTION 3-->
+                                                <!-- START PROMOTION 4-->
+                        <div class="col-6">
+                                <a href="#">
+                                    <img src="img/promotion/promotion-4.jpg">
+                                </a>
+                        </div>
+                                        <!-- END PROMOTION 4-->
+                                        <!-- START PROMOTION 5-->
+                        <div class="col-6">
+                                <a href="#">
+                                    <img src="img/promotion/promotion-5.jpg">
+                                </a>      
+                        </div>
+                                        <!-- END PROMOTION 5-->
+                                        <!-- START PROMOTION 6-->
+                        <div class="col-6">
+                                <a href="#">
+                                    <img src="img/promotion/promotion-6.jpg">
+                                </a>
+                        </div>
+                                        <!-- END PROMOTION 6-->
+                                        <!-- START PROMOTION 7-->
+                        <div class="col-6">
+                                <a href="#">
+                                    <img src="img/promotion/promotion-7.jpg">
+                                </a>   
+                        </div>
+                                        <!-- END PROMOTION 7-->
+                                        <!-- START PROMOTION 8-->
+                        <div class="col-6">
+                                <a href="#">
+                                    <img src="img/promotion/promotion-8.jpg">
+                                </a>       
+                        </div>
+                                            <!-- END PROMOTION 8-->
+                                            <!-- START PROMOTION 9-->
+                        <div class="col-6">
+                                <a href="#">
+                                    <img src="img/promotion/promotion-9.jpg">
+                                </a>     
+                        </div>
+                                        <!-- END PROMOTION 9-->
+                </div>
+                <!--MOBILE END PROMOTION-->
                     
 
                 </div>
