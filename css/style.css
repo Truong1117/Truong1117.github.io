@@ -212,6 +212,15 @@ padding: 10px 0px;
 font-size: 18px;
 text-transform: uppercase;
 }
+.box-buy-ticket .box-header-mobile{
+    background: #f26b38;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+    }
 .carousel-inner .box-buy-ticket .box-header p{
 font-size: 17px;
 margin: auto;
@@ -242,6 +251,11 @@ color: white;
      color: aquamarine;
     }
 .tab-content .tab-pane .form-group option:checked { color: red; }
+@media only screen and (max-width:576px){
+    #tabContentMobi{
+        display:none;
+    }
+}
 /*END BOX - BUY TICKET */
 
 /* START  CSS MAIN */
@@ -256,25 +270,28 @@ color: white;
     background: #f26b38;
     color: white;
 }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: transparent;
+}
 /* END  CSS DEMO FILM */
 
 /* START CSS COMMENT FILM */
-.container-fluid .row .col-6 .cm-film-content .cm-section{
+.container-fluid .row .cm-film-content .cm-section{
     display: table;
     width: 100%;
     margin: 30px 0;
 }
-.container-fluid .row .col-6 .cm-film-content .cm-section .movie-thumb{
+.container-fluid .row .cm-film-content .cm-section .movie-thumb{
     float: left;
     position: relative;
     margin: 0 20px 0 0;
-  
 }
-.container-fluid .row .col-6 .cm-film-content .cm-section .movie-thumb img{
+.container-fluid .row .cm-film-content .cm-section .movie-thumb img{
     width: 220px;
     height: auto;
 }
-.container-fluid .row .col-6 .cm-film-content .cm-section .cm-section-content h5{
+.container-fluid .row .cm-film-content .cm-section .cm-section-content h5{
     font-size: 18px;
     margin-bottom: 8px;
     text-transform: capitalize;
@@ -283,11 +300,11 @@ color: white;
     text-overflow: ellipsis;
     max-height: 58px;
 }
-.container-fluid .row .col-6 .cm-film-content .cm-section .cm-section-content h5 a{
+.container-fluid .row .cm-film-content .cm-section .cm-section-content h5 a{
     line-height: 22px;
     color: #43464b;
 }
-.container-fluid .row .col-6 .cm-film-content .cm-section .cm-section-content .blog-content{
+.container-fluid .row .cm-film-content .cm-section .cm-section-content .blog-content{
     color: #a0a3a7;
     display: block;
     display: -webkit-box;
@@ -301,6 +318,28 @@ color: white;
     text-align: justify;
     max-height: 42px;
 }
+    /* START CSS MOBILE*/
+    @media only screen and (max-width:576px){
+    .container-fluid .row .cm-film-content .cm-section .movie-thumb-mobile{
+        float: left;
+        position: relative;
+        margin: 0 20px 0 0;
+    }
+    .container-fluid .row .cm-film-content .cm-section .movie-thumb-mobile img{
+        width: 110px;
+        height: auto;
+    } 
+    .container-fluid .row .cm-film-content .cm-section .cm-section-content h5{
+        font-size: 14px;
+        margin-bottom: 8px;
+        text-transform: capitalize;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 58px;
+    } 
+}
+    /* END CSS MOBILE*/
 /* END CSS COMMENT FILM */
 
 /*START CSS PROMOTION */
@@ -356,6 +395,15 @@ color: white;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+@media only screen and (max-width:576px){
+    .col-6 a img {
+        width: 100%;
+        height: auto;
+    }
+    .promotion{
+        display: none;
+    }
+}
 /*END CSS PROMOTION */
 
 /* START CSS CEO-GALAXY*/
@@ -388,15 +436,6 @@ text-decoration: none;
     margin: 0 0 10px 0;
     padding-left: 16px;
 }
-.footer-widget .title-widget::before{
-    background-color: #f26b38;
-    content: "";
-    height: 22px;
-    left: 0;
-    position: absolute;
-    top: -2px;
-    width: 4px;
-}
 .footer-widget ul{
     list-style: none;
     font-size: 12px;
@@ -407,6 +446,15 @@ text-decoration: none;
 .footer-widget ul li:hover{
     color: #f26b38;
     cursor: pointer;
+}
+.footer-widget .title-widget::before{
+    background-color: #f26b38;
+    content: "";
+    height: 22px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 4px;
 }
 .footer-widget .title-widget-i{
     padding: 20px 0px;
@@ -419,6 +467,16 @@ text-decoration: none;
     color: #f26b38;
     cursor: pointer;
 }
-
+@media only screen and (max-width:576px){
+    .footer-widget .title-widget{
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 14px;
+        line-height: 1;
+        position: relative;
+        text-transform: uppercase;
+        margin: 0 0 10px 0;
+        padding-left: 16px;
+    }
+}
 /* END CSS FOOTER*/
 /* END  CSS MAIN */ 
